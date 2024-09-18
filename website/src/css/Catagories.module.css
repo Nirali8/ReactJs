@@ -1,0 +1,42 @@
+/* Shop By Category */
+
+/* .catagorySlider .slick-dots {
+  z-index: 0;
+  top: -40px;
+  text-align: right;
+  bottom: auto;
+  background-color: purple;
+}
+
+.catagorySlider .slick-dots li.slick-active button,
+.catagorySlider .slick-dots li.slick-active button:hover,
+.catagorySlider .slick-dots li button:hover {
+  border: 1px solid black;
+  border-radius: 50%;
+}
+
+.catagorySlider .slick-dots li.slick-active button:before,
+.catagorySlider .slick-dots li button:hover:before {
+  opacity: 1 !important;
+  font-size: 6px;
+  line-height: 22px;
+}
+.catagorySlider .slick-list {
+  z-index: 10;
+} */
+
+.catagoryImg img {
+  transition: transform 0.3s ease-in-out;
+}
+.catagoryImg img:hover {
+  transform: scale(1.2);
+}
+
+.shopButton,
+.shopButton:hover {
+  transition: 0.5s;
+}
+
+.shopCategoryBtnIcon {
+  transition: 0.1s;
+}

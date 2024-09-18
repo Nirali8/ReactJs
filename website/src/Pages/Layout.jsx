@@ -51,7 +51,7 @@ const List = createBrowserRouter([
         element: <CheckOut />,
       },
       {
-        path: "/error",
+        path: "/*",
         element: <Error />,
       },
       {

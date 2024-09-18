@@ -1,0 +1,42 @@
+.textWrapper {
+    display: flex;
+    justify-content: center;
+    background-color: var(--primary-color);
+    overflow: hidden;
+    text-wrap: nowrap;
+    position: relative;
+    top: -8px;
+}
+
+.textWrapper>div {
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+    padding: 0.8rem;
+    font-weight: 500;
+    font-family: sans-serif;
+    animation: rightToLeft 10000ms linear infinite;
+}
+
+.textWrapper:hover>div {
+    animation-play-state: paused;
+}
+
+.textWrapper>div>p {
+    margin-inline: 2rem;
+}
+
+.textWrapper>div>span {
+    font-size: 1.8rem;
+    margin-top: 3px;
+}
+
+@keyframes rightToLeft {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
