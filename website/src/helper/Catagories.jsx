@@ -75,7 +75,6 @@ const Catagories = () => {
           </div>
         </Slider>
       </div>
-      <div className="p-96"></div>
     </div>
   );
 };

@@ -2,7 +2,7 @@
   --primary-color: #93f859;
 }
 * {
-  font-family: "Albert Sans";
+  font-family: "Albert Sans", sans-serif;
 }
 .slideImage {
   width: 100%;

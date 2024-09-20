@@ -1,6 +1,6 @@
 import React from "react";
 import { ThumbnailsExample } from "../components/SplideTumbnail";
-
+import ProductSide from "../components/ProductSide";
 const ZoomSection = () => {
   return (
     <div
@@ -14,6 +14,7 @@ const ZoomSection = () => {
           className="absolute top-0 left-full h-[400px] w-[400px]  m-[12px] rounded-[5px]"
         ></div>
       </div>
+      <ProductSide />
     </div>
   );
 };
