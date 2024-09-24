@@ -1,0 +1,58 @@
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+table,
+th,
+td {
+  border: 1px solid black;
+}
+th,
+td {
+  padding: 10px;
+  text-align: left;
+}
+button {
+  padding: 5px 10px;
+  background-color: blueviolet;
+  border-radius: 7px;
+}
+.edit,
+.delete {
+  background-color: red;
+  color: white;
+  border: none;
+}
+.edit {
+  background-color: aqua;
+}
+.pagination button {
+  margin: 0 5px;
+  padding: 5px 10px;
+}
+.goto-page {
+  display: flex;
+  justify-content: end;
+}
+.delete {
+  background-color: red;
+}
+.export {
+  background-color: aqua;
+}
+.create {
+  background-color: blue;
+}
+.pageDiv {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+.main {
+  display: flex;
+  justify-content: space-between;
+}
+input{
+  height: 20px;
+}

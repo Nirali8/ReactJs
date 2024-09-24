@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <h2>Read Records</h2>
+    <div class="main">
+      <div>
+        <input
+          type="text"
+          id="search"
+          placeholder="Type a name..."
+          onkeyup="searchRecord()"
+        />
+        <button>
+          <i class="fa-solid fa-magnifying-glass"></i>.
+        </button>
+      </div>
+      <div>
+        <button class="delete" onclick="deleteSelected()">
+          <i class="fa-regular fa-circle-xmark"></i>
+          Delete Selected
+        </button>
+        <button class="export" onclick="exportCSV()">
+          <i class="fa-regular fa-circle-down"></i>Export CSV
+        </button>
+        <button class="create" onclick="createRecord()">
+          <i class="fa-regular fa-square-plus"></i>Create Record
+        </button>
+      </div>
+    </div>
+    <br /><br />
+
+    <table id="recordTable">
+      <thead>
+        <tr>
+          <th>
+            <input type="checkbox" id="selectAll" onclick="selectAll()" />
+          </th>
+          <th>Name</th>
+          <th>Description</th>
+          <th>Price</th>
+          <th>Category</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Table rows will be dynamically generated -->
+      </tbody>
+    </table>
+    <div class="pageDiv">
+      <div class="pagination">
+        <button onclick="previousPage()">Previous</button>
+        <span id="pageIndicator">Page 1</span>
+        <button onclick="nextPage()">Next</button>
+      </div>
+
+      <!-- Go to Page Feature -->
+      <div class="goto-page">
+        <input
+          type="number"
+          id="goToPageInput"
+          placeholder="Page number"
+          min="1"
+          style="width: 80px"
+        />
+        <button onclick="goToPage()">Go</button>
+      </div>
+    </div>
+    <script src="crud.js"></script>
+  </body>
+</html>

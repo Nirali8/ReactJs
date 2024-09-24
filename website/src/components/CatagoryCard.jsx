@@ -10,7 +10,7 @@ const CatagoryCard = ({ image, text }) => {
       <img
         src={image}
         alt="product demo image"
-        className="h-full w-full rounded-md object-cover hover:scale-125 hover:duration-500"
+        className="h-full w-full rounded-md object-cover"
       />
       <div className="absolute top-7 left-6 text-left">
         <p className="text-xl lg:text-lg font-medium tracking-wide mb-1">

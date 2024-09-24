@@ -9,7 +9,7 @@ const Slidemain = ({ image, text }) => {
         <h2 className="pb-9 text-lg max-lg:hidden">
           UPTO 40% OFF CHARGERS AND MORE
         </h2>
-        <h1 className="pb-9 max-lg:hidden lg:text-[64px] max-w-[450px]">
+        <h1 className="pb-9 max-lg:hidden lg:text-[60px] max-w-[450px]">
           {text}
         </h1>
         <button className="relative rounded-full px-8 py-5 bg-black text-white text-xl  max-sm:text-xs overflow-hidden">

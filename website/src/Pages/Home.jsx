@@ -4,6 +4,7 @@ import Marquee from "../helper/Marquee";
 import Catagories from "../helper/Catagories";
 import BestDeal from "../helper/BestDeal";
 import Earbud from "../helper/Earbud";
+import Discount from "../helper/Discount";
 const Home = () => {
   return (
     <div>
@@ -12,6 +13,7 @@ const Home = () => {
       <Catagories />
       <BestDeal />
       <Earbud />
+      <Discount/>
     </div>
   );
 };

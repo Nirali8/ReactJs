@@ -47,7 +47,7 @@ const Catagories = () => {
   };
 
   return (
-    <div className="mt-0 lg:mt-6 pb-10 md:pb-3 xl:pb-0 overflow-hidden w-[90%] m-auto">
+    <div className="mt-0 lg:mt-2 pb-10 md:pb-3 xl:pb-0 overflow-hidden w-[90%] m-auto">
       <div>
         <h1 className="text-[42px] max-md:text-xl py-4 md:py-8 lg:py-12">
           Shop by category.

@@ -41,11 +41,11 @@ const Recipe = () => {
       {data.map((item) => {
         return (
           <>
-            <div>
+            <div className="main">
               {/* {item.title === value ? console.log(item) : console.log(value)} */}
               {item.title === value ? <p>{item.title}</p> : <h1></h1>}
               {item.title === value ? (
-                <img src={item.photoUrl} alt="" className="" />
+                <img src={item.photoUrl} alt="" className="image" />
               ) : (
                 <h1></h1>
               )}
@@ -53,6 +53,10 @@ const Recipe = () => {
               {/* <img src={item.photoUrl} alt="" className="" /> */}
               {/* <p>{item.title}</p> */}
             </div>
+            {/* <div className="grid">
+              <h1>{item.title}</h1>
+              <img src={item.photoUrl} alt="" className="image"></img>
+            </div> */}
           </>
         );
       })}

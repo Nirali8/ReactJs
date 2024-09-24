@@ -1,0 +1,34 @@
+/* Image Hover */ 
+.imgHover{ 
+    position:relative; 
+    overflow:hidden; 
+    transition:0.5s;
+} 
+.imgHover::before{ 
+    content: ""; 
+    background:rgba(0,0,0,0.15); 
+    height:0; 
+    width:50%; 
+    position:absolute; 
+    top:0; 
+    left:0; 
+    transition:0.3s; 
+} 
+.imgHover::after{ 
+    content: ""; 
+    background:rgba(0,0,0,0.15); 
+    height:0; 
+    width:50%; 
+    position:absolute; 
+    bottom:0; 
+    right:0; 
+    transition:0.3s; 
+} 
+.imgHover:hover::before{ 
+    height:100%; 
+    transition:0.3s; 
+} 
+.imgHover:hover::after{ 
+   height:100%; 
+    transition-delay:0.3s; 
+}

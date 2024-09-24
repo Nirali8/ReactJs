@@ -29,26 +29,14 @@
   opacity: 0.6;
 }
 
-/* Shp catagory*/
-/* #catagorySlider .slick-dots {
-  top: -90px;
-  text-align: right;
+/* slider1 dots */
+
+.slider1 .slick-dots
+{
+  bottom:20px;
 }
 
-#catagorySlider .slick-dots li.slick-active button,
-#catagorySlider .slick-dots li.slick-active button:hover,
-#catagorySlider .slick-dots li button:hover {
-  border: 1px solid black;
-  border-radius: 50%;
-}
-
-#catagorySlider .slick-dots li.slick-active button:before,
-#catagorySlider .slick-dots li button:hover:before {
-  opacity: 1 !important;
-  font-size: 6px;
-  line-height: 22px;
-} */
-
+/* catagory slider dots*/
 .catagorySlider .slick-dots {
   z-index: 0;
   top: -90px;

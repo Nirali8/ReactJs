@@ -21,7 +21,7 @@ const Slider1 = () => {
     pauseOnHover: true,
   };
   return (
-    <div className="slider-container w-full">
+    <div className="slider-container w-full slider1">
       <Slider {...settings}>
         <div>
           <Slidemain image={SlideImage2} text={`Savings For Dad and Grades.`} />
