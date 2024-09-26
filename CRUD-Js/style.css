@@ -2,6 +2,7 @@
 table {
   width: 100%;
   border-collapse: collapse;
+  overflow-x: scroll;
 }
 table,
 th,
@@ -56,3 +57,20 @@ button {
 input{
   height: 20px;
 }
+i{
+  padding-right: 5px;
+}
+.pageInput
+{
+  width: 40px;
+  margin-top: 2px;
+}
+.pageIcon
+{
+  padding: 0;
+}
+/* @media only screen and(min-width:768px){
+  button{
+
+  }
+} */

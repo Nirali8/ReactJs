@@ -58,9 +58,9 @@
     </table>
     <div class="pageDiv">
       <div class="pagination">
-        <button onclick="previousPage()">Previous</button>
+        <button onclick="previousPage()"><i class="fa-solid fa-hand-point-left pageIcon"></i>.</button>
         <span id="pageIndicator">Page 1</span>
-        <button onclick="nextPage()">Next</button>
+        <button onclick="nextPage()"><i class="fa-solid fa-hand-point-right pageIcon"></i>.</button>
       </div>
 
       <!-- Go to Page Feature -->
@@ -68,9 +68,8 @@
         <input
           type="number"
           id="goToPageInput"
-          placeholder="Page number"
           min="1"
-          style="width: 80px"
+          class="pageInput"
         />
         <button onclick="goToPage()">Go</button>
       </div>
