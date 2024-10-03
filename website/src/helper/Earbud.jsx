@@ -15,7 +15,7 @@ const EarbudImage = ({image,text1,text2}) =>
         <div className="absolute bottom-3 left-1/4 right-1/4 text-center">
           <span className="text-xs font-bold">{text1}</span>
           <h4 className="text-2xl font-extrabold mb-5 max-lg:text-xl">
-            Smart Assistant
+            {text2}
           </h4>
           <button
             className="mb-5 rounded-full py-2 px-6 butn__new butn overflow-hidden relative"

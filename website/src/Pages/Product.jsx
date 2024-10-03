@@ -6,6 +6,7 @@ const Product = () => {
     <div>
       {/* <ThumbnailsExample /> */}
       <ZoomSection />
+      <div className="w-[500px] h-[500px]"></div>
     </div>
   );
 };

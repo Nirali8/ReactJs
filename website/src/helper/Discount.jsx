@@ -8,7 +8,9 @@ const Discount = () => {
         <img
           src={img}
           alt=""
-          className={"rounded-t-lg lg:rounded-t-none lg:rounded-l-lg rounded-l-none h-full w-full object-cover"}
+          className={
+            "rounded-t-lg lg:rounded-t-none lg:rounded-l-lg rounded-l-none h-full w-full object-cover"
+          }
         />
       </div>
       <div className="bg-[var(--primary-color)] flex">
@@ -26,8 +28,19 @@ const Discount = () => {
           <p className="font-light my-6">
             <span className="font-semibold">Hungry up ! </span>Deals end in :
           </p>
+          <div className="flex gap-2">
+            {["days", "hours", "mins", "secs"].map((unit, index) => (
+              <div
+                key={index}
+                className="bg-white w-[50px] h-[60px] flex flex-col items-center justify-center text-black text-[18px] font-bold"
+              >
+                <p>92</p>
+                <p className="text-[14px]">{unit}</p>
+              </div>
+            ))}
+          </div>
           <button
-            className="butn butn__new overflow-hidden relative rounded-full px-5 py-3
+            className="butn butn__new overflow-hidden relative rounded-full px-5 py-3 mt-6
            max-sm:text-xs max-sm:object-cover max-md:text-xs bg-black text-white"
           >
             Shop Now
