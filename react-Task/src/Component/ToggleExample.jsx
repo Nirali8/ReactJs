@@ -11,13 +11,18 @@ function ToggleExample() {
 
   return (
     <div>
-      <h1>Toggle Example</h1>
-      <button onClick={toggleVisibility}>
+      <h1 className="text-2xl border-2 border-dashed border-red-700">
+        Toggle Example
+      </h1>
+      <button
+        onClick={toggleVisibility}
+        className="bg-green-700 m-3 p-2 rounded-md"
+      >
         {isVisible ? "Hide Content" : "Show Content"}
       </button>
 
       {/* Conditionally render content based on boolean state */}
-      {isVisible && <p>This content is now visible!</p>}
+      {isVisible && <p className="text-2xl text-red-700">This content is now visible!</p>}
     </div>
   );
 }

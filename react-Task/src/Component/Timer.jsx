@@ -36,11 +36,26 @@ const Timer = () => {
   };
 
   return (
-    <div>
-      <h1>{seconds}s</h1>
-      <button onClick={handleStart}>Start</button>
-      <button onClick={handleStop}>Stop</button>
-      <button onClick={handleReset}>Reset</button>
+    <div className="m-3 p-2">
+      <h1>{seconds} s</h1>
+      <button
+        onClick={handleStart}
+        className="p-2 border-2 border-black rounded-lg m-2"
+      >
+        Start
+      </button>
+      <button
+        onClick={handleStop}
+        className="p-2 border-2 border-black rounded-lg m-2"
+      >
+        Stop
+      </button>
+      <button
+        onClick={handleReset}
+        className="p-2 border-2 border-black rounded-lg m-2"
+      >
+        Reset
+      </button>
     </div>
   );
 };

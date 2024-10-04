@@ -14,10 +14,20 @@ function Counter() {
   };
 
   return (
-    <div>
+    <div className="bg-green-700 text-3xl">
       <h1>Counter: {count}</h1>
-      <button onClick={increment}>Increment</button>
-      <button onClick={decrement}>Decrement</button>
+      <button
+        onClick={increment}
+        className="border-dashed border-2 m-4 p-2 rounded-md"
+      >
+        Increment
+      </button>
+      <button
+        onClick={decrement}
+        className="border-dashed border-2 m-4 p-2 rounded-md"
+      >
+        Decrement
+      </button>
     </div>
   );
 }

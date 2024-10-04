@@ -25,8 +25,8 @@ function App() {
       {/* <StateWithArray /> */}
       {/* <StateWithObject/> */}
       {/* <ToggleExample /> */}
-      {/* <Counter /> */}
-      <Timer/>
+      <Counter />
+      {/* <Timer/> */}
     </>
   )
 }

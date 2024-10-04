@@ -21,13 +21,15 @@ const StateWithArray = () => {
 
   return (
     <div>
-      <h1>Array State Example</h1>
-      <button onClick={addItem}>Add Item</button>
+      <h1 className="text-7xl text-red-700 border-double border-4 border-black m-6">
+        Array State Example
+      </h1>
+      <button onClick={addItem} className='bg-teal-700 p-2 rounded-lg m-2 text-4xl'>Add Item To Array</button>
 
       <ul>
         {items.map((item, index) => (
-          <li key={index}>
-            {item} <button onClick={() => removeItem(index)}>Remove</button>
+          <li key={index} className='text-2xl'>
+            {item}<button onClick={() => removeItem(index)} className='bg-green-700 m-3 p-2 rounded-md'>Remove Item</button>
           </li>
         ))}
       </ul>

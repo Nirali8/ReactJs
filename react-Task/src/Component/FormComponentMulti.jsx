@@ -72,7 +72,7 @@ const FormComponentMulti = () => {
   };
 
   return (
-    <div>
+    <div className='bg-slate-400 ring-4'>
       <h1 className="text-4xl p-4 m-4 ">Form With Multiple Data</h1>
       <form onSubmit={handleSubmit}>
         <div>
@@ -220,7 +220,7 @@ const FormComponentMulti = () => {
         </div>
         <button
           type="submit"
-          className="bg-purple-700 px-6 py-2 rounded-2xl mt-8"
+          className="bg-purple-700 px-6 py-2 rounded-2xl mt-8 mb-3"
         >
           Submit
         </button>
