@@ -56,9 +56,9 @@ const YupValidation = () => {
           type="email"
           id="email"
           value={formik.values.email}
-          onChange={formik.handleChange}
+          onChange={formik.handleChange} onBlur={formik.handleBlur}
         ></input>
-        {formik.errors.email ? (
+        {formik.errors.email && formik.touched.email ? (
           <div className="text-black">{formik.errors.email}</div>
         ) : null}
         <br />
@@ -69,9 +69,9 @@ const YupValidation = () => {
           type="password"
           id="password"
           value={formik.values.password}
-          onChange={formik.handleChange}
+          onChange={formik.handleChange} onBlur={formik.handleBlur}
         ></input>
-        {formik.errors.password ? (
+        {formik.errors.password && formik.touched.password ? (
           <div className=" text-black">{formik.errors.password}</div>
         ) : null}
         <br />
