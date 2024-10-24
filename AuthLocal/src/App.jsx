@@ -1,17 +1,24 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-import { CardOne } from './Card'
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Home from "./component/Home"
+import Login from "./component/Login";
+import SignUp from "./component/SignUp";
+import Navbar from "./component/Navbar";
+import "./App.css";
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
-    <>  
-      <CardOne/>
+    <>
+      <Router>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />}></Route>
+          <Route path="/login" element={<Login />}></Route>
+          <Route path="/signup" element={<SignUp />}></Route>
+        </Routes>
+      </Router>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
