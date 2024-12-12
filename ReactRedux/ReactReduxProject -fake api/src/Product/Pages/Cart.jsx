@@ -1,6 +1,6 @@
 import React from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { cart_to_wishlist, empty_cart, remove_to_cart } from "../../redux/Action";
+import { cart_to_wishlist, remove_to_cart } from "../../redux/Action";
 
 const Cart = () => {
   const CartData = useSelector((state) => state.cart);
@@ -10,7 +10,6 @@ const Cart = () => {
   return (
     <div>
       <h1>This is cart Page</h1>
-      <button className="bg-purple-600 rounded p-4 m-1" onClick={dispatch(empty_cart())}>Empty Cart</button>
       {CartData.map((item) => {
         return (
           <>
@@ -20,13 +19,13 @@ const Cart = () => {
               <li>{item.price}</li>
             </ul>
             <button
-              className="bg-yellow-500 p-4 m-1 rounded"
+              className="btn"
               onClick={() => dispatch(cart_to_wishlist(item))}
             >
               AddToWish
             </button>
             <button
-              className="bg-yellow-500 p-4 m-1 rounded"
+              className="btn"
               onClick={() => dispatch(remove_to_cart(item))}
             >
               Remove
