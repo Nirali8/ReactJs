@@ -31,12 +31,14 @@ const BookList = ({ book, setBookData }) => {
   return (
     <div className="m-auto">
       <h1>Here is the full Books Detail</h1>
+      <Search book={book} setBookData={setBookData} />
+
       <div className="bg-yellow-300 w-1/2 rounded-md p-2 m-2 mx-auto">
         {book.length === 0 ? (
           <div>No Data avilable</div>
         ) : editData ? (
-            <Update
-              id={id}
+          <Update
+            id={id}
             editData={editData}
             book={book}
             setBookData={setBookData}
@@ -60,7 +62,7 @@ const BookList = ({ book, setBookData }) => {
                   <button
                     className="bg-blue-400 p-1 rounded-md px-2 mx-2 "
                     onClick={() => {
-                      handleEdit(item,index);
+                      handleEdit(item, index);
                     }}
                   >
                     Edit
@@ -79,7 +81,6 @@ const BookList = ({ book, setBookData }) => {
           })
         )}
       </div>
-      <Search book={book} />
     </div>
   );
 };
