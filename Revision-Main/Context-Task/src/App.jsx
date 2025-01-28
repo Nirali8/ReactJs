@@ -1,9 +1,13 @@
 import { useState } from "react";
 import "./App.css";
 
-import UserContextProvider from "./componant/login/context/UserContextProvider";
-import Login from "./componant/login/Login";
-import Profile from "./componant/login/Profile";
+import WishlistContextProvider from "./componant/context/WishlistContextProvider";
+import Shop from "./componant/Shop";
+import Product from "./componant/Product"
+import Home from "./componant/Home";
+import Navbar from "./componant/Navbar";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
 
 function App() {
   return (
@@ -11,11 +15,28 @@ function App() {
       <h1 className="text-center text-3xl bg-yellow-600 p-4 m-3">
         This is App Components
       </h1>
-      <UserContextProvider>
-        <Login />
-        <Profile />
-      </UserContextProvider>
-      
+      <BrowserRouter>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />}></Route>
+          <Route
+            path="/shop"
+            element={
+              <WishlistContextProvider>
+                <Shop />
+              </WishlistContextProvider>
+            }
+          ></Route>
+          <Route
+            path="/product"
+            element={
+              <WishlistContextProvider>
+                <Product />
+              </WishlistContextProvider>
+            }
+          ></Route>
+        </Routes>
+      </BrowserRouter>
     </>
   );
 }
