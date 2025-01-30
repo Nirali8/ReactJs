@@ -26,6 +26,8 @@ const WishlistContextProvider = ({ children }) => {
         const response = await fetch("https://dummyjson.com/products");
         const data = await response.json();
         setProducts(data.products);
+        console.log(products);
+        
       } catch (error) {
         console.error("Failed to fetch products:", error);
       } finally {
